@@ -1,0 +1,55 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Editor
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Database files
+*.db
+*.sqlite3
+
+# Vector Database
+storage/vector_db/
+
+# Uploaded Documents
+storage/uploads/
+
+# Generated Artifacts
+storage/generated_artifacts/
+
+# Checkpoints
+storage/checkpoints/
+
+# Temporary Files
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build files
+build/
+dist/
+*.egg-info/
