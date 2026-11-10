@@ -1,0 +1,21 @@
+# LangGraph
+langgraph
+
+# Gemini LLM Integration
+langchain-google-genai
+
+# Environment Variables
+python-dotenv
+
+# Data Validation
+pydantic
+
+# RAG - Document Processing
+pypdf
+python-docx
+
+# RAG - Text Chunking
+langchain-text-splitters
+
+# RAG - Vector Database
+langchain-chroma
