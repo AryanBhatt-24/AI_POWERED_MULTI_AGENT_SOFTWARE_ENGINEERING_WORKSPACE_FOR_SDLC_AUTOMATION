@@ -30,4 +30,10 @@ Important Rules:
 - Use clear and specific language.
 - Analyze the complete project description.
 - Return output matching the provided RequirementOutput schema.
+- Use reference documents as supplementary project context.
+- Consider only information relevant to the user's project.
+- Treat the user's project description as the primary source of requirements.
+- Do not blindly assume that every statement in reference documents is a requirement.
+- If reference documents conflict with the project description, do not silently override the user's description.
+- Do not invent requirements from missing or unrelated information.
 """

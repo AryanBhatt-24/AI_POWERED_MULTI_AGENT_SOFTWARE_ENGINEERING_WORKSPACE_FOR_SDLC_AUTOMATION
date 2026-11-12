@@ -5,7 +5,8 @@ from agents.requirement_agent.schemas import RequirementOutput
 
 def analyze_requirements(
     project_description: str,
-    feedback: str | None = None
+    feedback: str | None = None,
+    reference_context: str | None = None
 ) -> RequirementOutput:
 
     structured_llm = llm.with_structured_output(RequirementOutput)
@@ -15,6 +16,9 @@ def analyze_requirements(
 
     Project Description:
     {project_description}
+    
+    Reference Documents Context:
+    {reference_context if reference_context else "No reference documents available."}
 
     Human Review Feedback:
     {feedback if feedback else "No previous feedback."}
