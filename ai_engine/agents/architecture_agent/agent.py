@@ -16,17 +16,19 @@ def design_architecture(
     prompt = f"""
     {ARCHITECTURE_ANALYSIS_PROMPT}
 
-    Software Requirements:
+    Approved Software Requirements:
     {requirements}
 
     Reference Documents Context:
     {reference_context if reference_context else "No reference documents available."}
-    
+
     Human Review Feedback:
     {feedback if feedback else "No previous feedback."}
 
-    If feedback is provided, revise the architecture
-    according to that feedback while preserving valid decisions.
+    If feedback is provided:
+    - Revise the architecture according to the feedback.
+    - Preserve valid existing architectural decisions.
+    - Do not introduce contradictions with approved requirements.
     """
 
     response = structured_llm.invoke(prompt)
