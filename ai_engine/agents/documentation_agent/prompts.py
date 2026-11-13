@@ -34,4 +34,11 @@ Important Rules:
 - Use professional technical language.
 - Avoid unnecessary repetition.
 - Return output matching the DocumentationOutput schema.
+- Use reference documents as supplementary project context.
+- Prioritize the approved outputs from Requirements, Architecture and Testing agents.
+- Use relevant reference information to enrich project background and technical explanations.
+- Maintain consistency between reference documents and approved agent outputs.
+- Do not blindly copy unrelated information from reference documents.
+- Do not invent project features, implementation details or technical decisions.
+- If reference documents conflict with approved agent outputs, do not silently override the approved outputs.
 """

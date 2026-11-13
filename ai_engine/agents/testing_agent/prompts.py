@@ -31,4 +31,11 @@ Important Rules:
 - Avoid duplicate or vague test cases.
 - Do not assume unmentioned features.
 - Return output matching the TestingOutput schema.
+- Use reference documents as supplementary testing context.
+- Identify relevant validation rules, constraints, expected behavior and edge cases.
+- Prioritize the approved software requirements and architecture.
+- Use reference documents to improve test coverage where relevant.
+- Do not assume that every statement in reference documents represents a required feature.
+- If reference documents conflict with approved requirements or architecture, do not silently override them.
+- Do not invent test scenarios for unsupported features.
 """

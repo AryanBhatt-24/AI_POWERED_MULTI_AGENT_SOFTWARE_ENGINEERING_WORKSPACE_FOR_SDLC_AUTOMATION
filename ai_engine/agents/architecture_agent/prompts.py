@@ -32,4 +32,11 @@ Important Rules:
 - Explain the reasoning behind major decisions.
 - Do not invent requirements.
 - Return output matching the ArchitectureOutput schema.
+- Use reference documents as supplementary technical context.
+- Consider only information relevant to the proposed architecture.
+- Prioritize the approved software requirements.
+- Use reference documents to identify existing systems, technology constraints, integrations, and technical preferences.
+- Do not blindly copy architecture or technology choices from reference documents.
+- If reference documents conflict with approved requirements, do not silently override the requirements.
+- Do not recommend technologies without a clear justification.
 """

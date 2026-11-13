@@ -7,7 +7,8 @@ from agents.testing_agent.prompts import TESTING_ANALYSIS_PROMPT
 def generate_test_plan(
     requirements: dict,
     architecture: dict,
-    feedback: str | None = None
+    feedback: str | None = None,
+    reference_context: str | None = None
 ) -> TestingOutput:
 
     structured_llm = llm.with_structured_output(TestingOutput)
@@ -20,6 +21,9 @@ def generate_test_plan(
 
     Software Architecture:
     {architecture}
+
+    Reference Documents Context:
+    {reference_context if reference_context else "No reference documents available."}
 
     Human Review Feedback:
     {feedback if feedback else "No previous feedback."}

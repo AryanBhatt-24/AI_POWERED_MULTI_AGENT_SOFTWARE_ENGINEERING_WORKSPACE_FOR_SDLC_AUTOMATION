@@ -7,7 +7,8 @@ from agents.architecture_agent.prompts import ARCHITECTURE_ANALYSIS_PROMPT
 
 def design_architecture(
     requirements: dict,
-    feedback: str | None = None
+    feedback: str | None = None,
+    reference_context: str | None = None
 ) -> ArchitectureOutput:
 
     structured_llm = llm.with_structured_output(ArchitectureOutput)
@@ -18,6 +19,9 @@ def design_architecture(
     Software Requirements:
     {requirements}
 
+    Reference Documents Context:
+    {reference_context if reference_context else "No reference documents available."}
+    
     Human Review Feedback:
     {feedback if feedback else "No previous feedback."}
 

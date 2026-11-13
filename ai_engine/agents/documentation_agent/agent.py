@@ -8,7 +8,8 @@ def generate_documentation(
     requirements: dict,
     architecture: dict,
     test_plan: dict,
-    feedback: str | None = None
+    feedback: str | None = None,
+    reference_context: str | None = None
 ) -> DocumentationOutput:
 
     structured_llm = llm.with_structured_output(DocumentationOutput)
@@ -25,6 +26,9 @@ def generate_documentation(
     Testing Plan:
     {test_plan}
 
+    Reference Documents Context:
+    {reference_context if reference_context else "No reference documents available."}
+    
     Human Review Feedback:
     {feedback if feedback else "No previous feedback."}
 
