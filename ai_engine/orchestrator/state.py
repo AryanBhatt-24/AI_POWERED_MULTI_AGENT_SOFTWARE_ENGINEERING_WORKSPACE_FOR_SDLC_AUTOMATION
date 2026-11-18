@@ -12,3 +12,5 @@ class State(TypedDict):
     current_stage: str | None
     review_decision: str | None
     review_feedback: str | None
+
+    artifacts: dict | None
