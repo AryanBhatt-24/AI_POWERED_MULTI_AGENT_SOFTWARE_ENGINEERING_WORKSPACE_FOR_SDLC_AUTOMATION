@@ -53,3 +53,6 @@ desktop.ini
 build/
 dist/
 *.egg-info/
+
+# Node Modules
+node_modules/
