@@ -19,3 +19,6 @@ langchain-text-splitters
 
 # RAG - Vector Database
 langchain-chroma
+
+# Report Lab 
+reportlab
